@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('img[data-placeholder]').forEach(img=>{img.addEventListener('error',()=>{img.style.display='none'})})});

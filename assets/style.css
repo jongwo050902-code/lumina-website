@@ -1,0 +1,138 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0c0914;color:#f7f1ff;font-family:Arial,'Malgun Gothic',sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}header{position:sticky;top:0;z-index:10;background:#0c0914ef;border-bottom:1px solid #392d47;backdrop-filter:blur(12px)}.top{max-width:1200px;margin:auto;min-height:72px;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{font-weight:900;font-size:25px;letter-spacing:5px}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{font-size:11px;letter-spacing:1px;color:#c9bfd5}nav a:hover,nav a.active{color:#dfbaff}main{min-height:72vh}.hero{min-height:75vh;background:radial-gradient(ellipse at 50% 45%,#49316c,#21152f 55%,#0c0914 85%);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 20px}.eyebrow{color:#c6a0ff;font-size:11px;letter-spacing:4px;text-transform:uppercase;font-weight:bold}.hero h1{font-size:clamp(60px,11vw,140px);letter-spacing:.14em;margin:16px 0 8px;line-height:1.2}.hero .sub{letter-spacing:4px;color:#e1c9ff;font-size:12px}.btn{display:inline-block;border:1px solid #c8a4e8;border-radius:100px;padding:11px 25px;margin-top:25px;background:transparent;color:white}.btn:hover{background:#b18cde;color:#160e21}.wrap{max-width:1200px;margin:auto;padding:72px 24px}.pagehead{padding:85px 24px 65px;text-align:center;background:linear-gradient(130deg,#251832,#100b18)}.pagehead h1{font-size:clamp(35px,6vw,68px);letter-spacing:5px;margin:10px 0}.muted{color:#b7aac7}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{border:1px solid #423151;border-radius:16px;background:#21172f;overflow:hidden}.card .inner{padding:23px}.card h3{margin:0 0 8px}.card p{margin:6px 0}.visual{height:220px;background:linear-gradient(140deg,#3f285c,#191126);display:grid;place-items:center;text-align:center;color:#d9b9ff;font-size:12px;letter-spacing:2px;position:relative;overflow:hidden}.visual img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.visual.tall{height:290px}.sectiontitle{font-size:28px;letter-spacing:3px;margin:0 0 24px}.tag{display:inline-block;border:1px solid #74588d;border-radius:30px;padding:4px 10px;font-size:11px;color:#dfcaff}.listrow{border-bottom:1px solid #423151;padding:19px 0;display:flex;justify-content:space-between;gap:20px;align-items:center}.listrow strong{font-size:15px}.date{color:#bb9fce;font-size:12px;white-space:nowrap}details{border:1px solid #493454;border-radius:12px;padding:18px 22px;margin:12px 0;background:#1b1426}summary{cursor:pointer;font-weight:bold}details p,details li{color:#cfc2d8}footer{border-top:1px solid #382c47;padding:35px 20px;text-align:center;color:#9888a8;font-size:12px}.note{background:#241a31;border-left:3px solid #bd94ed;padding:16px 20px;border-radius:6px;color:#d9cce6}.small{font-size:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}@media(max-width:850px){.top{flex-direction:column;align-items:flex-start}nav{gap:13px}.hero h1{letter-spacing:5px}.two{grid-template-columns:1fr}}
+/* MEMBER PROFILE UPGRADE */
+.member-card{display:block;transition:transform .2s ease,border-color .2s ease}
+.member-card:hover,.member-card:focus-visible{transform:translateY(-6px);border-color:#c7a3f2;outline:none}
+.member-more{display:inline-block;margin-top:12px;color:#d9b9ff;font-size:11px;letter-spacing:1.5px}
+.back-link{display:inline-block;color:#d9b9ff;font-size:12px;letter-spacing:1.5px;margin-bottom:28px}
+.member-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(25px,5vw,80px);align-items:center}
+.member-portrait{height:auto;min-height:450px;aspect-ratio:3/4;border:1px solid #58416d;border-radius:18px}
+.member-biography h2{font-size:clamp(38px,5vw,70px);margin:10px 0 30px;line-height:1.2}
+.member-biography h2 small{display:block;font-size:15px;letter-spacing:5px;color:#c9a7ef;margin-top:12px}
+.member-biography h3{font-size:17px;letter-spacing:2px;margin-top:32px}
+.profile-facts{border-top:1px solid #493454}
+.profile-facts>div{display:grid;grid-template-columns:100px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid #493454}
+.profile-facts span{font-size:11px;letter-spacing:1px;color:#bfa2da}
+.profile-facts strong{font-size:14px;font-weight:500}
+.member-navigation{display:flex;justify-content:space-between;gap:12px;margin-top:60px;border-top:1px solid #493454;padding-top:24px}
+.member-navigation a{color:#d9b9ff;font-size:13px}
+.member-navigation a:hover,.back-link:hover{text-decoration:underline}
+@media(max-width:760px){.member-detail{grid-template-columns:1fr}.member-portrait{min-height:360px;max-width:500px;width:100%;margin:auto}.profile-facts>div{grid-template-columns:90px 1fr}.member-navigation a{font-size:11px}}
+
+/* PROFILE DETAILS V2 */
+.member-biography .profile-facts strong{overflow-wrap:anywhere}.member-biography .profile-facts>div{align-items:start}.member-biography .profile-facts span{padding-top:2px}.member-biography .profile-facts strong{line-height:1.7}
+
+/* LUMINA TRACKLIST */
+
+.tracklist {
+  margin: 18px 0 0;
+  padding-left: 28px;
+  color: #eee4ff;
+}
+
+.tracklist li {
+  padding: 12px 8px;
+  border-bottom: 1px solid #493354;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.tracklist li::marker {
+  color: #c9a3ff;
+  font-weight: bold;
+}
+
+.tracklist li:last-child {
+  border-bottom: none;
+}
+
+.title-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 4px 9px;
+  background: #9b6de0;
+  color: white;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+
+/* HOME - LUMINA ARTIST PHOTO */
+
+.visual:has(.artist-photo) {
+  padding: 0;
+  overflow: hidden;
+}
+
+.artist-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* LUMINA HOME PROFILE IMAGE */
+
+.visual:has(.artist-photo) {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.artist-photo {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 240px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* HOME PROFILE CARD IMAGE */
+
+.visual:has(.artist-photo) {
+  padding: 0 !important;
+  overflow: hidden;
+  height: 240px;
+}
+
+.visual .artist-photo {
+  display: block !important;
+  width: 100% !important;
+  height: 240px !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* LUMINA HOME PROFILE PHOTO */
+
+.visual:has(.artist-photo) {
+  padding: 0 !important;
+  overflow: hidden;
+  height: 240px;
+}
+
+.artist-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* LUMINA GROUP PROFILE IMAGE */
+
+.visual:has(.artist-photo) {
+  height: 240px;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.artist-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

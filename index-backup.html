@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0912">
+<title>LUMINA | MOMENT ENTERTAINMENT</title>
+<style>
+:root{--bg:#0b0912;--panel:#171320;--line:#383043;--ink:#f7f3ff;--muted:#b9aec9;--accent:#c9a7ff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,'Malgun Gothic',sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}header{position:sticky;top:0;z-index:20;background:#0b0912ef;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navwrap{max-width:1250px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-size:24px;font-weight:900;letter-spacing:5px}.nav{display:flex;gap:17px;flex-wrap:wrap}.nav a{font-size:11px;letter-spacing:1px;color:#d5cce1}.nav a:hover,.nav a:focus{color:var(--accent)}.hero{min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 40%,#563876 0%,#21152e 42%,#0b0912 78%)}.hero:before{content:'✦';position:absolute;top:12%;left:17%;font-size:50px;color:#e3d0ff55}.hero:after{content:'✧';position:absolute;bottom:13%;right:16%;font-size:75px;color:#e3d0ff55}.hero-inner{padding:90px 20px}.eyebrow{font-size:11px;letter-spacing:4px;color:var(--accent);text-transform:uppercase}.hero h1{font-size:clamp(65px,13vw,165px);line-height:1.1;letter-spacing:.12em;margin:22px 0;font-weight:900}.hero .tagline{font-size:13px;letter-spacing:4px;color:#e6d6ff}.btn{display:inline-block;border:1px solid #d3b5ff;border-radius:50px;padding:12px 25px;margin-top:25px;color:#fff;background:#b995ff24}.btn:hover{background:#b995ff50}.container{max-width:1250px;margin:auto;padding:85px 22px}.section-top{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:28px}.section-top h2{font-size:clamp(25px,4vw,39px);letter-spacing:3px;margin:6px 0}.sub{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.members{grid-template-columns:repeat(5,minmax(0,1fr))}.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:#b997ee}.photo{aspect-ratio:4/5;display:grid;place-items:center;background:linear-gradient(135deg,#44315b,#1a1426);color:#e9d8ff;font-size:40px;font-weight:bold;position:relative}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.album-art{aspect-ratio:1/1}.card-body{padding:17px}.card-body h3{margin:4px 0 5px;font-size:17px}.card-body p{margin:0;color:var(--muted);font-size:12px}.pill{font-size:10px;color:#e5d5ff;border:1px solid #685080;padding:5px 9px;border-radius:20px}.detail{display:none;padding:15px 17px 20px;border-top:1px solid var(--line);font-size:13px;color:#d9cce8}.card.open .detail{display:block}.detail ul{padding-left:20px}.card-action{margin:12px 0 0;background:transparent;color:var(--accent);border:0;padding:0;font-size:12px}.featured{background:linear-gradient(110deg,#2b1c3f,#15101e);border:1px solid var(--line);border-radius:17px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:25px}.featured h3{font-size:clamp(24px,4vw,42px);margin:10px 0}.featured p{color:var(--muted);max-width:580px}.notice{width:100%;border-collapse:collapse}.notice th,.notice td{padding:18px 12px;border-bottom:1px solid var(--line);text-align:left}.notice th{font-size:12px;color:var(--muted)}.notice td{font-size:13px}.notice button{background:none;border:0;color:var(--ink);text-align:left;padding:0}.notice button:hover{text-decoration:underline}.notice-detail{display:none;padding:18px;background:#1a1524;border-radius:10px;margin:12px 0;white-space:pre-line;color:#e5dbef;font-size:13px}.notice-detail.show{display:block}.schedule{display:grid;gap:12px}.schedule-item{display:flex;align-items:center;gap:20px;padding:18px 22px;background:var(--panel);border:1px solid var(--line);border-radius:12px}.schedule-date{color:var(--accent);font-weight:700;min-width:105px}.fan{background:linear-gradient(110deg,#2c2042,#18121f);border-radius:18px;padding:50px 30px;text-align:center}.fan h2{font-size:40px;letter-spacing:6px;margin:12px 0}footer{border-top:1px solid var(--line);padding:35px 20px;text-align:center;color:var(--muted);font-size:12px}footer strong{display:block;color:#fff;letter-spacing:3px;margin-bottom:10px}.note{font-size:11px;color:#a79ab8}.empty{color:var(--muted);font-size:12px}.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}.gallery .photo{aspect-ratio:1/1}.gallery figcaption{padding:12px;font-size:12px;color:var(--muted)}figure{margin:0}@media(max-width:950px){.members{grid-template-columns:repeat(3,minmax(0,1fr))}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{gap:10px}.nav a{font-size:10px}}@media(max-width:600px){.navwrap{flex-direction:column}.nav{justify-content:center}.members,.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:65vh}.hero h1{letter-spacing:3px}.featured{display:block}.section-top{display:block}.container{padding:60px 16px}.schedule-item{align-items:flex-start;flex-direction:column;gap:5px}.notice th:last-child,.notice td:last-child{display:none}}@media(max-width:390px){.members,.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="navwrap"><a class="logo" href="#home">LUMINA</a><nav class="nav" aria-label="메인 메뉴"><a href="#home">HOME</a><a href="#profile">PROFILE</a><a href="#discography">DISCOGRAPHY</a><a href="#gallery">GALLERY</a><a href="#schedule">SCHEDULE</a><a href="#notice">NOTICE</a><a href="#lumiere">LUMIÈRE</a></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner"><div class="eyebrow">Moment Entertainment Presents</div><h1>LUMINA</h1><div class="tagline">TEN LIGHTS, ONE UNIVERSE</div><a class="btn" href="#profile">DISCOVER LUMINA ↓</a></div></section>
+<section class="container" aria-label="최신 앨범"><div class="featured"><div><div class="eyebrow">Latest Release · 2026.10.31</div><h3>PART OF 'M'</h3><p>What will unfold in the MEMORY CITY?</p><a class="btn" href="#discography">VIEW DISCOGRAPHY</a></div><div class="eyebrow">1ST FULL ALBUM</div></div></section>
+<section class="container" id="profile"><div class="section-top"><div><div class="eyebrow">Meet the Artists</div><h2>PROFILE</h2><div class="sub">서로 다른 열 개의 빛, 하나의 LUMINA</div></div><span class="pill">10 MEMBERS</span></div><div class="grid members" id="members"></div></section>
+<section class="container" id="discography"><div class="section-top"><div><div class="eyebrow">Music & Story</div><h2>DISCOGRAPHY</h2><div class="sub">LUMINA의 음악과 이야기를 만나보세요.</div></div></div><div class="grid" id="albums"></div></section>
+<section class="container" id="gallery"><div class="section-top"><div><div class="eyebrow">Visual Archive</div><h2>GALLERY</h2><div class="sub">사진을 images 폴더에 넣으면 자동으로 표시됩니다.</div></div></div><div class="grid gallery" id="gallery-grid"></div></section>
+<section class="container" id="schedule"><div class="section-top"><div><div class="eyebrow">Upcoming & Past</div><h2>SCHEDULE</h2></div></div><div class="schedule" id="schedules"></div></section>
+<section class="container" id="notice"><div class="section-top"><div><div class="eyebrow">Moment Entertainment</div><h2>NOTICE</h2></div></div><table class="notice"><thead><tr><th>구분</th><th>제목</th><th>날짜</th></tr></thead><tbody id="notices"></tbody></table><div id="notice-details"></div></section>
+<section class="container" id="lumiere"><div class="fan"><div class="eyebrow">Official Fandom</div><h2>LUMIÈRE</h2><p>루미나의 빛을 함께 완성하는 사람들</p><p class="sub">LUMINA × LUMIÈRE · FOREVER SHINING</p></div></section>
+</main><footer><strong>MOMENT ENTERTAINMENT</strong>© 2026 MOMENT ENTERTAINMENT · LUMINA<br><span class="note">비공식 개인 창작 프로젝트 · 실제 소속사 또는 공식 사이트가 아닙니다.</span></footer>
+<script>
+// 아래 데이터만 수정하면 홈페이지 내용을 쉽게 바꿀 수 있습니다.
+const members = [
+  {name:'서하',birth:'2004.04.22',position:'리더 · 메인보컬',image:'seoha.jpg'},
+  {name:'이준',birth:'2004.06.21',position:'메인댄서 · 서브보컬',image:'ijun.jpg'},
+  {name:'하민',birth:'',position:'',image:'hamin.jpg'},
+  {name:'유찬',birth:'',position:'',image:'yuchan.jpg'},
+  {name:'도윤',birth:'',position:'',image:'doyun.jpg'},
+  {name:'시온',birth:'',position:'',image:'sion.jpg'},
+  {name:'태오',birth:'',position:'',image:'taeo.jpg'},
+  {name:'은율',birth:'',position:'',image:'eunyul.jpg'},
+  {name:'로운',birth:'',position:'',image:'rowoon.jpg'},
+  {name:'이현',birth:'',position:'',image:'ihyun.jpg'}
+];
+const albums = [
+  {name:"PART OF 'L'",date:'2026.05.26',type:'1ST MINI ALBUM',subtitle:'TIME TO SHINE',image:'album-l.jpg',tracks:[]},
+  {name:"PART OF 'U'",date:'2026.08.08',type:'2ND MINI ALBUM',subtitle:'SECRET CLASS : The Crack Behind The Bell',image:'album-u.jpg',tracks:[]},
+  {name:"PART OF 'M'",date:'2026.10.31',type:'1ST FULL ALBUM',subtitle:'What will unfold in the MEMORY CITY?',image:'album-m.jpg',tracks:[]}
+];
+const gallery = [
+  {title:'GROUP CONCEPT 01',image:'group-01.jpg'},
+  {title:'GROUP CONCEPT 02',image:'group-02.jpg'},
+  {title:'MEMORY CITY',image:'memory-city.jpg'},
+  {title:'BEHIND THE SCENES',image:'behind.jpg'}
+];
+const schedules = [
+  {date:'2026.10.31',text:"LUMINA 1ST FULL ALBUM · PART OF 'M' 발매"},
+  {date:'2026.12.01',text:'LUNÉA × LUMINA 콜라보 시작 (가상 일정)'},
+  {date:'2026.12.25',text:'IN YOUR EYES 컬렉터 패키지 판매 (가상 일정)'}
+];
+const notices = [
+  {category:'NOTICE',title:"LUMINA 1ST FULL ALBUM 발매 안내",date:'2026.10.31',body:"안녕하세요. MOMENT ENTERTAINMENT입니다.\nLUMINA의 첫 번째 정규앨범 PART OF 'M' 발매를 안내드립니다."},
+  {category:'EVENT',title:'LUMINA 영상통화 팬사인회 안내',date:'2026.11.11',body:'안녕하세요. MOMENT ENTERTAINMENT입니다.\n영상통화 팬사인회 세부 일정과 응모 방법은 추후 공지됩니다.\n※ 창작용 예시 공지입니다.'},
+  {category:'NEWS',title:'LUNÉA × LUMINA 컬래버레이션 안내',date:'2026.11.12',body:'콜라보 기간: 2026.12.01 ~ 2027.03.31\n컬렉터 패키지 판매일: 2026.12.25\n※ 가상 프로젝트 안내입니다.'}
+];
+function el(tag,cls,text){const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node}
+function photo(filename,label,cls='photo'){const box=el('div',cls,label.slice(0,1));const img=document.createElement('img');img.src='images/'+filename;img.alt=label;img.loading='lazy';img.onerror=()=>img.remove();box.append(img);return box}
+function addToggle(card,detail){const btn=el('button','card-action','자세히 보기 +');btn.type='button';btn.setAttribute('aria-expanded','false');btn.addEventListener('click',()=>{const open=card.classList.toggle('open');btn.textContent=open?'접기 −':'자세히 보기 +';btn.setAttribute('aria-expanded',String(open))});card.querySelector('.card-body').append(btn);card.append(detail)}
+const memberRoot=document.querySelector('#members');members.forEach(m=>{const card=el('article','card');card.append(photo(m.image,m.name));const body=el('div','card-body');body.append(el('h3','',m.name),el('p','',m.position||'프로필 준비 중'));card.append(body);const detail=el('div','detail');detail.append(el('p','',`생년월일: ${m.birth||'정보 준비 중'}`),el('p','',`포지션: ${m.position||'정보 준비 중'}`));addToggle(card,detail);memberRoot.append(card)});
+const albumRoot=document.querySelector('#albums');albums.forEach(a=>{const card=el('article','card');card.append(photo(a.image,a.name,'photo album-art'));const body=el('div','card-body');body.append(el('span','pill',a.type),el('h3','',a.name),el('p','',a.subtitle),el('p','',a.date));card.append(body);const detail=el('div','detail');detail.append(el('strong','', 'TRACKLIST'));if(a.tracks.length){const ul=el('ul');a.tracks.forEach(t=>ul.append(el('li','',t)));detail.append(ul)}else detail.append(el('p','empty','트랙리스트를 추가할 수 있습니다.'));addToggle(card,detail);albumRoot.append(card)});
+const galleryRoot=document.querySelector('#gallery-grid');gallery.forEach(g=>{const figure=el('figure','card');figure.append(photo(g.image,g.title),el('figcaption','',g.title));galleryRoot.append(figure)});
+const scheduleRoot=document.querySelector('#schedules');schedules.forEach(s=>{const item=el('div','schedule-item');item.append(el('span','schedule-date',s.date),el('span','',s.text));scheduleRoot.append(item)});
+const noticeRoot=document.querySelector('#notices'),noticeDetails=document.querySelector('#notice-details');notices.forEach((n,i)=>{const row=el('tr');row.append(el('td','',n.category));const cell=el('td');const btn=el('button','',n.title);btn.type='button';btn.setAttribute('aria-expanded','false');cell.append(btn);row.append(cell,el('td','',n.date));noticeRoot.append(row);const detail=el('div','notice-detail',n.body);detail.id='notice-'+i;noticeDetails.append(detail);btn.addEventListener('click',()=>{const open=detail.classList.toggle('show');btn.setAttribute('aria-expanded',String(open));if(open)detail.scrollIntoView({behavior:'smooth',block:'center'})})});
+</script>
+</body>
+</html>
